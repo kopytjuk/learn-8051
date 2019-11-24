@@ -1,10 +1,10 @@
 ; Increments the 7-segment display from 0 to 9
 ; EdSim update frequency: 1s
 
-; put low and high byte of the program memory address of the first 7-segment code into DPTR to use in MOVC command
-MOV DPL, #LOW(LEDcodes)		; | put the low byte of the start address of the
-					; | 7-segment code table into DPL
-MOV DPH, #HIGH(LEDcodes)	; put the high byte into DPH
+; put low and high byte of the program memory address
+; of the first 7-segment code into DPTR to use in MOVC command
+MOV DPL, #LOW(LEDcodes)
+MOV DPH, #HIGH(LEDcodes)
 
 main:
     MOV R1, 0
