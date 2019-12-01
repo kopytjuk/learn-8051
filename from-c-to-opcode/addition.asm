@@ -334,9 +334,9 @@ _main:
 	subb	a,#0x80
 	jnc	00105$
 ;	.\from-c-to-opcode\addition.c:8: char x = P1;
-;	.\from-c-to-opcode\addition.c:9: x = x - 0x34;
+;	.\from-c-to-opcode\addition.c:9: x = x - 5;
 	mov	a,_P1
-	add	a,#0xcc
+	add	a,#0xfb
 	mov	_P1,a
 ;	.\from-c-to-opcode\addition.c:7: for (int i=0; i<3; i++){
 	inc	r6
